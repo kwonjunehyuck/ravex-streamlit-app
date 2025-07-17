@@ -83,6 +83,10 @@ def launch_backtest(csv_path):
             })
 
         result_df = pd.DataFrame(results)
+        # ✅ 여기 추가
+        if result_df.empty:
+           st.warning("⚠️ 평가할 시그널이 없습니다. 백테스트를 진행할 수 없습니다.")
+           return
         result_df['cumulative_roi'] = result_df['roi'].cumsum()
 
         # 🔒 CSV 저장
