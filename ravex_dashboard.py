@@ -6,8 +6,8 @@ import altair as alt
 import os
 
 # ========== CONFIG ==========
-CSV_PATH = r"C:\Users\ozil3\Downloads\ravex_signals_v27.csv"
-RESULT_SAVE_PATH = r"C:\Users\ozil3\Downloads\ravex_result_logs.csv"
+CSV_PATH = "ravex_signals_v27.csv"
+RESULT_SAVE_PATH = "ravex_result_logs.csv"
 BINANCE_API = "https://fapi.binance.com"
 TP_RATIO = 0.03
 SL_RATIO = 0.015
